@@ -10,7 +10,7 @@
 		<div id="panel">
 			<div class="content clearfix">
 				<div class="left">
-					<h1>Site de l'USEP 49</h1>
+					<h1>N4w4K</h1>
 					<h2>Espace membres</h2>		
 					<p class="grey">Vous pourrez acc&egrave;der &agrave; toutes les fonctionnalit&eacute;es du site en vous enregistrant.</p>
 				</div>
