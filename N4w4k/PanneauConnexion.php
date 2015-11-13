@@ -24,7 +24,7 @@
 				</div>
 				
 				<!-- Espace pour se connecter (deja membre) -->
-				<div class="left right">	
+				<div class="left">	
 					<form action="#" method="post">
 						<h1>Espace membre</h1>
 							<label class="grey" for="log">Identifiant:</label>

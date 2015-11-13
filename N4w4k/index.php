@@ -6,7 +6,7 @@
 
 <head>
 	<?php require_once("PanneauConnexion.php");?>
-  	<title>USEP 49 - Accueil</title>
+  	<title>N4w4K - Accueil</title>
 </head>
 
 <body>
@@ -17,13 +17,8 @@
 				include_once('class/autoload.php');   // pour inclure nos classes
 							   	
 				$site = new page_base('accueil');
-				$site->corps = '<br/><h3>Bienvenue sur le site de l\'USEP49</h3> 
-					<p>Site toujours en construction...</p>
-					<p> Les &eacute;coles pouront ici s\'inscrire, afin d\'enregistrer les &eacute;leves participant aux cross organis&eacute; par l\'USEP. 
-					<br/><br/>L\'Union sportive de l\'enseignement du premier degr&eacute; (USEP) est la f&eacute;d&eacute;ration de sport scolaire de l\'ecole 
-					primaire francaise. Evoluant au sein de la ligue de l\'enseignement, elle est plac&eacute;e sous la tutelle du ministre 
-					charg&eacute; de l\'&eacute;ducation. L\'USEP participe a une mission de service public, qui vise l\'&eacute;ducation par le sport, 
-					la formation d\'un citoyen sportif &eacute;clair&eacute;.</p>';
+				$site->corps = '<br/><h3>N4w4K -- Clash Of Clan</h3> 
+					<p>Site toujours en construction...</p>';
 				$site->affiche();
 			?>
 		</div>	
