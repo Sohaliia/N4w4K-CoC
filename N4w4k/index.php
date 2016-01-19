@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>particles snow</title>
+    <title>Clan N4W4K CoC</title>
 	<link rel="stylesheet" href="css/styleneige.css">
 	<link rel="stylesheet" href="css/stylelogin.css">
   </head>
@@ -12,7 +12,8 @@
  	<div class="cont">
 <div class="demo">
     <div class="login">
-       <div class="login__check"><img src="images/N4w4k_logo.png" alt="" /></div>
+      <img src="images/N4w4k_logo.png" alt="" class="logo_index" />
+
       <div class="login__form">
         <div class="login__row">
           <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
@@ -41,8 +42,8 @@
         </svg>
         <p class="app__hello">Bienvenue N4w4kien !</p>
         <div class="app__user">
-          <img src="images/N4w4k_logo.png" alt="" class="app__user-photo" />
-          <span class="app__user-notif">5</span>
+          <img src="images/coc1.png" alt="" class="app__user-photo" />
+          <span class="app__user-notif">3</span>
         </div>
         <div class="app__month">
           <span class="app__month-btn left"></span>
