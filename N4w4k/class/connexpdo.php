@@ -6,9 +6,9 @@ function connexpdo()
         global $local;
         
         $PARAM_hote = 'localhost';
-        $PARAM_utilisateur = 'root';
-        $PARAM_mot_passe = '';
-        $PARAM_nom_bd = 'usep';
+        $PARAM_utilisateur = 'n4w4k';
+        $PARAM_mot_passe = 'clash';
+        $PARAM_nom_bd = 'n4w4k';
         
         try 
         {

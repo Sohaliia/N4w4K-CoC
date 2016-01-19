@@ -4,9 +4,9 @@
 class connexpdo 
 {
 	private $PARAM_hote = 'localhost'; // le chemin vers le serveur
-	private $PARAM_utilisateur = 'root'; // nom d'utilisateur pour se connecter
-	private $PARAM_mot_passe = ''; // mot de passe de l'utilisateur pour se connecter
-	private $PARAM_nom_bd = 'usep'; // nom de la base de donnee
+	private $PARAM_utilisateur = 'n4w4k'; // nom d'utilisateur pour se connecter
+	private $PARAM_mot_passe = 'clash'; // mot de passe de l'utilisateur pour se connecter
+	private $PARAM_nom_bd = 'n4w4k'; // nom de la base de donnee
 	private $connexion;
 	
 	public function __construct() 

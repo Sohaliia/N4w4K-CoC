@@ -19,7 +19,7 @@
 				<div class="left">
 					<form class="clearfix" action="#" method="post">					
 						<h1>Pas encore membre?</h1><br/>		
-						<a><input type="submit" href="../inscriptionUser.php" name="submit" value="S'enregistrer" class="bt_register" /></a>
+						<a><input type="submit" href="login.php" name="submit" value="S'enregistrer" class="bt_register" /></a>
 					</form>
 				</div>
 				
