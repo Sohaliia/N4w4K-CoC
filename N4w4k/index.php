@@ -28,7 +28,7 @@
           <input type="password" class="login__input pass" placeholder="Mot de Passe"/>
         </div>
         <button type="button" class="login__submit">Connexion</button>
-        <p class="login__signup">Pas encore membre? &nbsp;<a>Inscription</a></p>
+        <p class="login__signup">Pas encore membre? &nbsp;<a href="EnConstruction.html">Inscription</a></p>
       </div>
     </div>
     <div class="app">
