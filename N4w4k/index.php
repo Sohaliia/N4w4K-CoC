@@ -2,23 +2,15 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Login/Logout animation concept</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    
-    
-    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
-
-        <link rel="stylesheet" href="css/stylelogin.css">
-
-    
-    
-     
+    <title>particles snow</title>
+	<link rel="stylesheet" href="css/styleneige.css">
+	<link rel="stylesheet" href="css/stylelogin.css">
   </head>
 
-  <body>
-
-    <div class="cont">
-  <div class="demo">
+ <body>
+ 	<div id="particles-js">
+ 	<div class="cont">
+<div class="demo">
     <div class="login">
        <div class="login__check"></div>
       <div class="login__form">
@@ -34,8 +26,8 @@
           </svg>
           <input type="password" class="login__input pass" placeholder="Mot de Passe"/>
         </div>
-        <button type="button" class="login__submit">Inscription</button>
-       <!--  <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>--> 
+        <button type="button" class="login__submit">Connexion</button>
+        <p class="login__signup">Pas encore membre? &nbsp;<a>Inscription</a></p>
       </div>
     </div>
     <div class="app">
@@ -108,13 +100,12 @@
       </div>
     </div>
   </div>
-</div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-        <script src="js/login.js"></script>
-
-    
-    
-    
+	  </div>
+	
+	</div>
+	<<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/login.js"></script> 
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+	<script src="js/scriptneige.js"></script>
   </body>
 </html>
