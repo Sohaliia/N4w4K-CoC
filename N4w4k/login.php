@@ -11,12 +11,15 @@
         <link rel="stylesheet" href="css/stylelogin.css">
 
     
+  
+
     
     
   </head>
 
   <body>
-
+<div id="particles-js">
+<!---<h1><a href> HELLO</a></h1>-->
     <div class="cont">
   <div class="demo">
     <div class="login">
@@ -34,8 +37,8 @@
           </svg>
           <input type="password" class="login__input pass" placeholder="Mot de Passe"/>
         </div>
-        <button type="button" class="login__submit">Inscription</button>
-       <!--  <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>--> 
+        <button type="button" class="login__submit">Connexion</button>
+       <p class="login__signup">Don't have an account? &nbsp;<a>Sign up</a></p>
       </div>
     </div>
     <div class="app">
@@ -115,6 +118,6 @@
 
     
     
-    
+    </div>
   </body>
 </html>
