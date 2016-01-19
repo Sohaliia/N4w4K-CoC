@@ -12,7 +12,7 @@
  	<div class="cont">
 <div class="demo">
     <div class="login">
-       <div class="login__check"></div>
+       <div class="login__check"><img src="images/N4w4k_logo.png" alt="" /></div>
       <div class="login__form">
         <div class="login__row">
           <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
@@ -42,7 +42,7 @@
         <p class="app__hello">Bienvenue N4w4kien !</p>
         <div class="app__user">
           <img src="images/N4w4k_logo.png" alt="" class="app__user-photo" />
-          <span class="app__user-notif">3</span>
+          <span class="app__user-notif">5</span>
         </div>
         <div class="app__month">
           <span class="app__month-btn left"></span>
