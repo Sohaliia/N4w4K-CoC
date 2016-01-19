@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html >
   <head>
@@ -11,26 +14,30 @@
  	<div id="particles-js">
  	<div class="cont">
 <div class="demo">
+    
+    
     <div class="login">
+    <form action="class/ConnexionUtilisateur.php" method="post">
       <img src="images/N4w4k_logo.png" alt="" class="logo_index" />
-
       <div class="login__form">
         <div class="login__row">
           <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
             <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
           </svg>
-          <input type="text" class="login__input name" placeholder="Pseudo"/>
+          <input type="text" class="login__input name" name="log" id="log" placeholder="Pseudo"/>
         </div>
         <div class="login__row">
           <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
             <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
           </svg>
-          <input type="password" class="login__input pass" placeholder="Mot de Passe"/>
+          <input type="password" class="login__input pass" name="pwd" id="pwd" placeholder="Mot de Passe"/>
         </div>
-        <button type="button" class="login__submit">Connexion</button>
-        <p class="login__signup">Pas encore membre? &nbsp;<a href="EnConstruction.html">Inscription</a></p>
+        <button type="submit" class="login__submit">Connexion</button>
+        <p class="login__signup">Pas encore membre? &nbsp;<a href="InscriptionUser.php">Inscription</a></p>
       </div>
+    </form>
     </div>
+    
     <div class="app">
       <div class="app__top">
         <div class="app__menu-btn">
@@ -104,8 +111,8 @@
 	  </div>
 	
 	</div>
-	<<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="js/login.js"></script> 
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/login.js"></script>
     <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 	<script src="js/scriptneige.js"></script>
   </body>

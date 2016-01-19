@@ -1,5 +1,4 @@
 
-
 <?php 
 include_once 'connexpdo.php';
 	
@@ -20,7 +19,7 @@ include_once 'connexpdo.php';
 				$droitUser = $_POST["droitUser"];
 			
 				// on se connecte à notre base
-				$base = mysql_connect ('localhost', 'root', '');
+				$base = mysql_connect ('localhost', 'n4w4k', 'clash');
 				mysql_select_db ('usep', $base) ;
 				
 				//Requète d'insertion des valeurs reçu en paramêtres dans la bdd

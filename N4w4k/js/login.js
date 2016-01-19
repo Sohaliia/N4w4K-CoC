@@ -19,7 +19,7 @@ $(document).ready(function() {
   };
   
   $(document).on("click", ".login__submit", function(e) {
-    if (animating) return;
+	 if (animating) return;
     animating = true;
     var that = this;
     ripple($(that), e);
@@ -39,6 +39,7 @@ $(document).ready(function() {
       }, submitPhase2);
     }, submitPhase1);
   });
+  
   
   $(document).on("click", ".app__logout", function(e) {
     if (animating) return;
@@ -60,3 +61,4 @@ $(document).ready(function() {
   });
   
 });
+
