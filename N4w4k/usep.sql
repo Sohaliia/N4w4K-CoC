@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Client: localhost
--- Généré le: Sam 16 Mai 2015 à 23:21
--- Version du serveur: 5.6.12-log
--- Version de PHP: 5.4.12
+-- Client :  127.0.0.1
+-- Généré le :  Mar 19 Janvier 2016 à 21:05
+-- Version du serveur :  5.6.17
+-- Version de PHP :  5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,35 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `usep`
+-- Base de données :  `n4w4k`
 --
-CREATE DATABASE IF NOT EXISTS `usep` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `usep`;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `ecole`
---
-
-CREATE TABLE IF NOT EXISTS `ecole` (
-  `idEcole` int(30) NOT NULL AUTO_INCREMENT,
-  `nomEcole` text NOT NULL,
-  `cpEcole` int(5) NOT NULL,
-  `villeEcole` text NOT NULL,
-  `mailEcole` varchar(50) NOT NULL,
-  `telEcole` int(10) NOT NULL,
-  `mdpEcole` varchar(30) NOT NULL,
-  PRIMARY KEY (`idEcole`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
-
---
--- Contenu de la table `ecole`
---
-
-INSERT INTO `ecole` (`idEcole`, `nomEcole`, `cpEcole`, `villeEcole`, `mailEcole`, `telEcole`, `mdpEcole`) VALUES
-(1, 'lycée chevrollier', 49000, 'angers', 'chevrollier@gmail.com', 102030405, ''),
-(2, 'lycée E.mounier', 49000, 'angers', 'mounier@gmail.com', 203040506, '');
 
 -- --------------------------------------------------------
 
@@ -58,19 +31,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `nomUser` text NOT NULL,
   `mdpUser` varchar(30) NOT NULL,
   PRIMARY KEY (`idUser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
 -- Contenu de la table `user`
 --
 
 INSERT INTO `user` (`idUser`, `nomUser`, `mdpUser`) VALUES
-(1, 'lila', 'lila'),
-(2, 'Admin', 'Admin'),
-(14, 'fs', ''),
-(15, 'dsd', ''),
-(16, 'dqdqdqd', '');
+(17, 'tiphanie', 'tiphanie');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
