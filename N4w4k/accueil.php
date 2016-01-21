@@ -5,7 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<?php require_once("PanneauConnexion.php");?>
   	<title>N4w4K - Accueil</title>
 </head>
 
@@ -13,7 +12,6 @@
 	<div id="container">
 		<div id="content" style="padding-top:100px;">
 			<?php
-			 	// Reste de la page index
 				include_once('class/autoload.php');   // pour inclure nos classes
 						   	
 				$site = new page_base('accueil');

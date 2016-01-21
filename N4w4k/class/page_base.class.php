@@ -56,24 +56,23 @@ class page_base {
 					<meta http-equiv="content-type" content="text/html; charset=utf-8" />	
 					<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 					
-					<!-- Menu -->				  	
-					<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				    <meta name="viewport" content="width=device-width, initial-scale=1">
-			    	<link rel="stylesheet" href="css/stylesMenu.css">
-					<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-					<script src="script.js"></script>
-				  	
-					<!-- Panneau connexion -->
-				  	<link rel="stylesheet" href="css/slide.css" type="text/css" media="screen" />
-					<script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
-					<script src="js/slide.js" type="text/javascript"></script>			
+					<!-- Menu 2 -->
+					<meta charset="UTF-8" />
+					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+					<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+					<meta name="description" content="Responsive Retina-Friendly Menu with different, size-dependent layouts" />
+					<meta name="keywords" content="responsive menu, retina-ready, icon font, media queries, css3, transition, mobile" />
+					<link rel="shortcut icon" href="../favicon.ico"> 
+					<link rel="stylesheet" type="text/css" href="css/menu-default.css" />
+					<link rel="stylesheet" type="text/css" href="css/menu-component.css" />
+					<script src="js/modernizr.custom.js"></script>
             </header>
 		<?php
 					
 			}
 
 				
-		/*********** Fonction de récuperation du name ***************/
+		/*********** Fonction de recuperation du name ***************/
 
 		private function recupSession()
 		{
@@ -89,7 +88,7 @@ class page_base {
 		} 
 		
 		
-		/***************** Fonction de déconnexion ***************/
+		/***************** Fonction de deconnexion ***************/
 		
 		
 		public function deconnexion()
@@ -107,7 +106,7 @@ class page_base {
 		?>
 			<footer>
 				<p id="copyright">
-					Mise en page WoOlfY & SkimoO &copy; 2015
+					Mise en page WoOlfY & SkimoO &copy; 2016
 				</p>
 			</footer>
 		<?php
@@ -117,15 +116,54 @@ class page_base {
 	private function affiche_menu() {
 		?>   
 		<nav>
-			<div id='cssmenu'> 
-				<ul>
-				   <li class='active'><a href='index.php'><span>Accueil</span></a></li>
-				   <li><a href='inscriptionUser.php'><span>Mon compte</span></a></li>
-				   <li><a href='inscriptionEcole.php'><span>Le clan</span></a></li>
-				   <li><a href='listeEcole.php'><span>Profil</span></a></li>
-				   <li class='last'><a href='contact.php'><span>Contact</span></a></li>
-				</ul>
+		<div class="container">	
+			<div class="main clearfix">
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>Accueil</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-services"></i>
+								</span>
+								<span>Le clan</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i aria-hidden="true" class="icon-portfolio"></i></span>
+								<span>Mon profil</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i aria-hidden="true" class="icon-blog"></i></span>
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i aria-hidden="true" class="icon-team"></i></span>
+								<span>The team</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon"><i aria-hidden="true" class="icon-contact"></i></span>
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
+		</div>
 		</nav>
 		<?php
 		}
@@ -135,7 +173,7 @@ class page_base {
 	/************** Affichage du menu en mode connecter / droit ***************************/
 		protected function affiche_droit()
 		{
-			// on se connecte à notre base
+			// on se connecte a�notre base
 			$base = mysql_connect ('localhost', 'root', '');
 			mysql_select_db ('usep', $base) ;
 			
@@ -210,14 +248,14 @@ class page_base {
 	/************* Gestion des ecoles  *******************/
 		public function les_ecoles()
 		{
-			// on se connecte à notre base
+			// on se connecte a notre base
 			$base = mysql_connect ('localhost', 'root', '');
 			mysql_select_db ('usep', $base) ;
 			
-			/* construction de la requête */
+			/* construction de la requete */
 			$requete = 'SELECT nomEcole FROM ecole ORDER BY nomEcole ASC;';
 		
-			/* renvoie du résultat de la requête */
+			/* renvoie du resultat de la requete */
 			return $requete;
 		}
 		
