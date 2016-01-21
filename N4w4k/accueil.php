@@ -12,6 +12,7 @@
 	<div id="container">
 		<div id="content" style="padding-top:100px;">
 			<?php
+				include_once('menu.php');
 				include_once('class/autoload.php');   // pour inclure nos classes
 						   	
 				$site = new page_base('accueil');
