@@ -33,11 +33,11 @@ session_start();
           <input type="password" class="login__input pass" name="pwd" id="pwd" placeholder="Mot de Passe"/>
         </div>
         <button type="submit" class="login__submit">Connexion</button>
-        <p class="login__signup">Pas encore membre? &nbsp;<a href="InscriptionUser.php">Inscription</a></p>
+        <p class="login__signup">Pas encore membre? &nbsp;<a href="EnConstruction.html">Inscription</a></p>
       </div>
     </form>
     </div>
-    
+
     <div class="app">
       <div class="app__top">
         <div class="app__menu-btn">

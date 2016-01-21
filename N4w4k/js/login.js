@@ -7,6 +7,7 @@ $(document).ready(function() {
       $login = $(".login"),
       $app = $(".app");
   
+  
   function ripple(elem, e) {
     $(".ripple").remove();
     var elTop = elem.offset().top,
@@ -17,7 +18,7 @@ $(document).ready(function() {
     $ripple.css({top: y, left: x});
     elem.append($ripple);
   };
-  
+
   $(document).on("click", ".login__submit", function(e) {
 	 if (animating) return;
     animating = true;
