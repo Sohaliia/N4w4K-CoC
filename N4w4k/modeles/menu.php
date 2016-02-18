@@ -8,7 +8,19 @@
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="../css/menu-default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/menu-component.css" />
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<script src="../js/modernizr.custom.js"></script>
+		
+		<!------------------- Bootstrap ---------------------->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+				
 	</head>
 	
 	<body>
@@ -18,38 +30,32 @@
 					<ul>
 						<li>
 							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="icon-home"></i></span>
-								<span>Accueil</span>
+								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>Accueil</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="icon-portfolio"></i></span>
-								<span>Le clan</span>
+								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-flash"></i> Clan</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="icon-users"></i></span>
-								<span>Les membres</span>
+								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-th-list"></i> Membres</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="icon-portfolio"></i></span>
-								<span>GDC</span>
+								<span class="icon"><i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i> GDC</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="icon-services"></i></span>
-								<span>Mon profil</span>
+								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-user"></i> Profil</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="icon-contact"></i></span>
-								<span>Contact</span>
+								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-envelope"></i> Contact</span>
 							</a>
 						</li>
 					</ul>
