@@ -6,25 +6,13 @@
 
 <head>
   	<title>N4w4K - Accueil</title>
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-	<div id="container">
-		<div id="content" style="padding-top:100px;">
-			<?php
-				include_once('menu.php');
-				include_once('class/autoload.php');   // pour inclure nos classes
-						   	
-				$site = new page_base('accueil');
-				$site->corps = '<br/><h3>N4w4K -- Clash Of Clan</h3> 
-					<p>Site toujours en construction...</p>';
-				echo("
-				<td rowspan=\"2\" bgcolor=\"#FFFFFF\">
-					<img src=\"images/N4w4k_logo.png\" width=\"40%\" height=\"40%\"/>
-				</td>");
-				$site->affiche();
-			?>
-		</div>	
+	<div class="container">
+		<?php include('../modeles/menu.php'); ?>
+		<!-- <img src="../images/N4w4k_logo.png" class="logo"/> -->
 	</div>
 </body>
 

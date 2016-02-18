@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+	
 	<head>
-
+	<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="../css/menu-default.css" />
+		<link rel="stylesheet" type="text/css" href="../css/menu-component.css" />
+		<script src="../js/modernizr.custom.js"></script>
 	</head>
+	
 	<body>
 		<div class="container">	
 			<div class="main clearfix">
@@ -10,49 +18,37 @@
 					<ul>
 						<li>
 							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-home"></i>
-								</span>
-								<span>Home</span>
+								<span class="icon"><i aria-hidden="true" class="icon-home"></i></span>
+								<span>Accueil</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon"> 
-									<i aria-hidden="true" class="icon-services"></i>
-								</span>
-								<span>Services</span>
+								<span class="icon"><i aria-hidden="true" class="icon-portfolio"></i></span>
+								<span>Le clan</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-portfolio"></i>
-								</span>
-								<span>Portfolio</span>
+								<span class="icon"><i aria-hidden="true" class="icon-users"></i></span>
+								<span>Les membres</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-blog"></i>
-								</span>
-								<span>Blog</span>
+								<span class="icon"><i aria-hidden="true" class="icon-portfolio"></i></span>
+								<span>GDC</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-team"></i>
-								</span>
-								<span>The team</span>
+								<span class="icon"><i aria-hidden="true" class="icon-services"></i></span>
+								<span>Mon profil</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="icon">
-									<i aria-hidden="true" class="icon-contact"></i>
-								</span>
+								<span class="icon"><i aria-hidden="true" class="icon-contact"></i></span>
 								<span>Contact</span>
 							</a>
 						</li>

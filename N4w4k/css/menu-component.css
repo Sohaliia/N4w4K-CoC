@@ -9,7 +9,6 @@
 	font-style: normal;
 }
 
-/* Windows Chrome ugly fix http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363 */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	@font-face {
 		font-family: 'icomoon';
@@ -28,33 +27,15 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-.icon-team:before {
-	content: "\e000";
-}
-
-.icon-blog:before {
-	content: "\e001";
-}
-
-.icon-home:before {
-	content: "\e002";
-}
-
-.icon-portfolio:before {
-	content: "\e003";
-}
-
-.icon-services:before {
-	content: "\e004";
-}
-
-.icon-contact:before {
-	content: "\e005";
-}
-
-.icon-menu:before {
-	content: "\f0c9";
-}
+.icon-team:before {content: "\e000";}
+.icon-blog:before {content: "\e001";}
+.icon-home:before {content: "\e002";}
+.icon-portfolio:before {content: "\e003";}
+.icon-services:before {content: "\e004";}
+.icon-contact:before {content: "\e005";}
+.icon-users:before {content: "\e900";}
+.icon-trophy:before {content: "\e901";}
+.icon-menu:before {content: "\f0c9";}
 
 a, li {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
