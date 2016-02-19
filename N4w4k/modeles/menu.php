@@ -6,7 +6,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<link rel="shortcut icon" href="../favicon.ico"> 
-		<link rel="stylesheet" type="text/css" href="../css/menu-default.css" />
 		<link rel="stylesheet" type="text/css" href="../css/menu-component.css" />
 		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<script src="../js/modernizr.custom.js"></script>
@@ -25,43 +24,41 @@
 	
 	<body>
 		<div class="container">	
-			<div class="main clearfix">
-				<nav id="menu" class="nav">					
-					<ul>
-						<li>
-							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>Accueil</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-flash"></i> Clan</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-th-list"></i> Membres</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon"><i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i> GDC</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-user"></i> Profil</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-envelope"></i> Contact</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div><!-- /container -->
+		<div class="main clearfix">
+			<nav id="menu" class="nav">					
+				<ul>
+					<li>
+						<a href="#">
+							<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>Accueil</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-flash"></i> Clan</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-th-list"></i> Membres</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i class="glyphicon glyphicon-star-empty" aria-hidden="true"></i> GDC</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-user"></i> Profil</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon"><i aria-hidden="true" class="glyphicon glyphicon-envelope"></i> Contact</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		<script>
 			//  The function to change the class
 			var changeClass = function (r,className1,className2) {
