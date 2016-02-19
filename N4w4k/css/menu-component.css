@@ -12,25 +12,21 @@
 	};
 }
 
-a, li {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
 
 /* Global CSS that are applied for all screen sizes */
 
 .main,
 .container > header {
 	width: 100%;
-	margin: 0 auto;
-	padding: 2em;
+	margin: auto;
+	padding: 1.5em;
 }
 
 .nav ul {
 	max-width: 1240px;
-	margin: 0;
+	margin-left: 35px;
 	padding: 0;
-	margin-top: -15px;
+	margin-top: 60px;
 	list-style: none;
 	font-size: 1.5em;
 	font-weight : bold;
@@ -41,7 +37,7 @@ a, li {
 	display: block;
 }
 
-/* couleur du texte du menu sans passer dessus */
+/* couleur du texte menu sans passer dessus */
 .nav a {
 	display: block;
 	color: rgba(249, 249, 249, 1);
@@ -63,13 +59,11 @@ a, li {
 /* } */
 
 /* Remove the blue Webkit background when element is tapped */
-
-a, button {
+.a, .button {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 /* Hover effect for the whole navigation to make the hovered item stand out */
-
 .no-touch .nav ul:hover a {
 	color: rgba(249, 249, 249, .5);
 }
@@ -79,30 +73,12 @@ a, button {
 }
 
 /* Adding some background color to the different menu items */
-
-.nav li:nth-child(6n+1) {
-	background: rgb(208, 101, 3);
-}
-
-.nav li:nth-child(6n+2) {
-	background: rgb(233, 147, 26);
-}
-
-.nav li:nth-child(6n+3) {
-	background: rgb(22, 145, 190);
-}
-
-.nav li:nth-child(6n+4) {
-	background: rgb(22, 107, 162);
-}
-
-.nav li:nth-child(6n+5) {
-	background: rgb(27, 54, 71);
-}
-
-.nav li:nth-child(6n+6) {
-	background: rgb(21, 40, 54);
-}
+.nav li:nth-child(6n+1) {background: rgb(208, 101, 3);}
+.nav li:nth-child(6n+2) {background: rgb(233, 147, 26);}
+.nav li:nth-child(6n+3) {background: rgb(22, 145, 190);}
+.nav li:nth-child(6n+4) {background: rgb(22, 107, 162);}
+.nav li:nth-child(6n+5) {background: rgb(27, 54, 71);}
+.nav li:nth-child(6n+6) {background: rgb(21, 40, 54);}
 
 /* For screen bigger than 800px */
 @media (min-width: 50em) {
@@ -110,7 +86,7 @@ a, button {
 	/* Transforms the list into a horizontal navigation */
 	.nav li {
 		float: left;
-		width: 16.66666666666667%;
+		width: 16%;
 		text-align: center;
 		-webkit-transition: border .5s;
 		-moz-transition: border .5s;
@@ -162,20 +138,19 @@ a, button {
 	}
 
 	/* Placing the icon */
-	
 	.icon {
-		padding-top: 0.8em;
+		padding-top: 0.4em;
 	}
 	
-	/* Animating the height of the element*/
+	/* hauteur du menu*/
 	.nav a {
-		height: 4.5em;
+		height: 2.5em;
 	}
 
 	.no-touch .nav a:hover ,
 	.nav a:active ,
 	.nav a:focus {
-		height: 5.5em;
+		height: 3.0em;
 	}	
 
 	/* Making the text follow the height animation */
@@ -195,7 +170,7 @@ a, button {
 		margin-right: 0.3em;
 		padding: 0.4em;
 		border-radius: 50%;
-		font-size: 1.4em;
+		font-size: 0.8em;
 		box-shadow: 0 0 0 30px transparent;
 		background: rgba(255,255,255,0.1);
 		-webkit-transform: translate3d(0, 0, 0);
@@ -350,7 +325,7 @@ a, button {
 	}
 
 	.nav li .icon + span {
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 }
 

@@ -6,13 +6,17 @@
 
 <head>
   	<title>N4w4K - Accueil</title>
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css"/>
 </head>
 
 <body>
-	<div class="container">
-		<?php include('../modeles/menu.php'); ?>
-		<!-- <img src="../images/N4w4k_logo.png" class="logo"/> -->
+	<div class="accueil">
+		<div>
+			<?php include('../modeles/menu.php'); ?>
+			<div class="videoGallery">
+				<?php include('../VideoGallery/VideoGallery.php'); ?>
+			</div>
+		</div>
 	</div>
 </body>
 

@@ -12,11 +12,19 @@ h2{
 	height: 15%;
 }
 
-body {
-  background-color: rgb(208, 101, 3);
+.accueil{
+	background-image: url("../images/fond2.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	Background-attachment: fixed;
 }
 
-.container{
+.videoGallery{
+	margin-top: -55px;
+}
+
+body
+{
 
 }
 
