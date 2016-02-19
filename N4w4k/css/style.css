@@ -17,14 +17,11 @@ h2{
 }
 
 body {
-  background-image: url("../images/fond2.jpg");
-  background-position: top left;
-  background-size: 100% 450%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: content-box;
-  background-color: #333};
+  background-color: rgb(208, 101, 3);
+}
+
+.container{
+
 }
 
 
