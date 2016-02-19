@@ -15,15 +15,27 @@ session_start();
  	<div class="cont">
 <div class="demo">
     
+   <?php  
+   if(isset($_GET["error"]))
+   {
+   		echo '<script language="JavaScript">alert(\'Utilisateur non reconnu\');</script>';
+   		$urlCourante=$_SERVER["REQUEST_URI"];
+   		$urlGet = explode("?",$urlCourante);
+   		echo '<script language="JavaScript">
+  		window.location.replace("index.php");</script>';	
+   }?>
+    
+    
+    
     <div class="login">
-    <form action="class/ConnexionUtilisateur.php" method="post">
+   <form action="ConnexionBDD/ConnexionUser.php" method="POST">  
       <img src="images/N4w4k_logo.png" alt="" class="logo_index" />
       <div class="login__form">
         <div class="login__row">
           <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
             <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
           </svg>
-          <input type="text" class="login__input name" name="log" id="log" placeholder="Pseudo"/>
+          <input type="text" class="login__input name" name="pseudo" id="pseudo" placeholder="Pseudo"/>
         </div>
         <div class="login__row">
           <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
@@ -31,8 +43,8 @@ session_start();
           </svg>
           <input type="password" class="login__input pass" name="pwd" id="pwd" placeholder="Mot de Passe"/>
         </div>
-        <button type="submit" class="login__submit">Connexion</button>
-        <p class="login__signup">Pas encore membre? &nbsp;<a href="EnConstruction.html">Inscription</a></p>
+        <button type="submit" class="login__submit">Go</button>
+        <p class="login__signup">Pas encore membre? &nbsp;<a href="Inscription.php">Inscription</a></p>
       </div>
     </form>
     </div>
