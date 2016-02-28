@@ -1,6 +1,16 @@
 <?php
-session_start();
+include_once 'includes/db_connect.php';
+include_once 'includes/functions.php';
+ 
+sec_session_start();
+ 
+if (login_check($mysqli) == true) {
+    $logged = 'in';
+} else {
+    $logged = 'out';
+}
 ?>
+
 <!DOCTYPE html>
 <html >
   <head>
@@ -22,13 +32,17 @@ session_start();
    		$urlCourante=$_SERVER["REQUEST_URI"];
    		$urlGet = explode("?",$urlCourante);
    		echo '<script language="JavaScript">
-  		window.location.replace("index.php");</script>';	
-   }?>
-    
-    
-    
+  		window.location.replace("index.php");</script>';
+   }
+   ?>
+    <?php
+      /*  if (isset($_GET['error'])) {
+            echo '<p class="error">Une erreur s’est produite lors de votre connexion!</p>';
+        }*/
+        ?> 
+
     <div class="login">
-   <form action="ConnexionBDD/ConnexionUser.php" method="POST">  
+   <form action="includes/process_login.php" method="POST">  
       <img src="images/N4w4k_logo.png" alt="" class="logo_index" />
       <div class="login__form">
         <div class="login__row">
@@ -45,9 +59,10 @@ session_start();
         </div>
         <button type="submit" class="login__submit">Go</button>
         <p class="login__signup">Pas encore membre? &nbsp;<a href="Inscription.php">Inscription</a></p>
-      </div>
+        </div>
     </form>
     </div>
+  
 
     <div class="app">
       <div class="app__top">
@@ -122,8 +137,10 @@ session_start();
 	  </div>
 	
 	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="js/login.js"></script>
+    <script src="js/scriptindex.js"></script>
     <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 	<script src="js/scriptneige.js"></script>
   </body>
