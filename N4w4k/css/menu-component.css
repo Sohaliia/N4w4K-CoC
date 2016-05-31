@@ -18,6 +18,7 @@
 .main,
 .container > header {
 	width: 100%;
+	position: fixed;
 	margin: auto;
 	padding: 1.5em;
 }
