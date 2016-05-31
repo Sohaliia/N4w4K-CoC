@@ -205,6 +205,11 @@ input, button {
   font-size: 1.2rem;
   color: #ABA8AE;
 }
+
+.error {
+  font-size: 1.2rem;
+  color: red;
+}
 .login__signup a {
   color: #fff;
   cursor: pointer;

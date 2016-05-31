@@ -14,7 +14,7 @@ if (login_check($mysqli) == true) {
 <!DOCTYPE html>
 <html >
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Clan N4W4K CoC</title>
 	<link rel="stylesheet" href="css/styleneige.css">
 	<link rel="stylesheet" href="css/stylelogin.css">
@@ -26,24 +26,21 @@ if (login_check($mysqli) == true) {
 <div class="demo">
     
    <?php  
-   if(isset($_GET["error"]))
+   /*if(isset($_GET["error"]))
    {
    		echo '<script language="JavaScript">alert(\'Utilisateur non reconnu\');</script>';
    		$urlCourante=$_SERVER["REQUEST_URI"];
    		$urlGet = explode("?",$urlCourante);
    		echo '<script language="JavaScript">
   		window.location.replace("index.php");</script>';
-   }
+   }*/
    ?>
-    <?php
-      /*  if (isset($_GET['error'])) {
-            echo '<p class="error">Une erreur s’est produite lors de votre connexion!</p>';
-        }*/
-        ?> 
+
 
     <div class="login">
    <form action="includes/process_login.php" method="POST">  
       <img src="images/N4w4k_logo.png" alt="" class="logo_index" />
+
       <div class="login__form">
         <div class="login__row">
           <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
@@ -57,8 +54,16 @@ if (login_check($mysqli) == true) {
           </svg>
           <input type="password" class="login__input pass" name="pwd" id="pwd" placeholder="Mot de Passe"/>
         </div>
+        <?php
+        if (isset($_GET['error'])) {
+        	$urlCourante=$_SERVER["REQUEST_URI"];
+        	$urlGet = explode("?",$urlCourante);
+            echo '<p class="error">Une erreur sï¿½est produite lors de votre connexion!</p>';
+            
+        }
+        ?> 
         <button type="submit" class="login__submit">Go</button>
-        <p class="login__signup">Pas encore membre? &nbsp;<a href="Inscription.php">Inscription</a></p>
+        <p class="login__signup">Pas encore membre? &nbsp;<a href="includes/register.php">Inscription</a></p>
         </div>
     </form>
     </div>
